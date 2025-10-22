@@ -1,0 +1,50 @@
+<div class="block">
+<h1 class="page-title"> {{ title }} </h1>
+<hr>
+</div>
+
+<div class="columns">
+  <div class="column is-one-quarter">
+    <div class="avatar">
+      <img src="{{{prefix}}}/content/static/Theo-Garefalakis.jpg"	    
+	   style="object-fit:contain;
+		  width:310px;
+		  height:340px"/>
+    </div>
+  </div>
+  <div class="column">
+    I am a professor at the <a href="http://math.uoc.gr/el/">Department of Mathematics and Applied Mathematics</a> of the <a href="http://www.uoc.gr/">University of Crete</a>. My research interests include theoretical and algorithmic aspects of finite fields, cryptography, coding theory and combinatorics. Here is a <a href="content/static/bio-english.pdf">short CV</a>.
+    <br> <br>
+    <p class="section-title has-text-weight-medium"> Contact Details </p>
+    <table>
+      <tr><td><span class="section-subtitle">Email:&nbsp;</span></th>
+	<td><a href="mailto:tgaref@uoc.gr">tgaref@uoc.gr</a> / <a href="mailto:tgaref@gmail.com">tgaref@gmail.com</a></td></tr>
+
+      <tr><td><span class="section-subtitle">Address:&nbsp;</span></td>
+	<td> Department of Mathematics &amp; Applied Mathematics,</td></tr>
+      <tr><td> </td> <td>University of Crete, 70013 Heraklion, Geece </td></tr>
+
+      <tr><td><span class="section-subtitle">Office:&nbsp;</span></td><td> Γ216</td></tr>
+
+      <tr><td><span class="section-subtitle">Phone:&nbsp;</span></td> <td> (+30) 2810 393845</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="box">
+  <div class="section-title has-text-weight-medium"> <i id=icon class="fa fa-address-card"></i> Academic Positions </div>
+  <table>
+    {{#positions}}
+    <tr> <td><span class="section-subtitle">{{ time }}:&nbsp;</span></td><td> {{ pos }}</td></tr>
+    {{/positions}}
+  </table>
+</div>
+
+<div class="box">
+  <div class="section-title has-text-weight-medium"> <i id=icon class="fa fa-graduation-cap"></i> Education </div>
+  <table>
+    {{#education}}
+    <tr> <td><span class="section-subtitle">{{ time }}:&nbsp;</span></td><td> {{ pos }}</td></tr>
+    {{/education}}
+  </table>
+</div>

@@ -1,0 +1,222 @@
+:root{
+    --main-bg-color: #fffdff;
+    --box-bg-color: #fffdff;
+}
+
+
+.box{
+    background-color: var(--box-bg-color);
+}
+
+.footer{
+    background-color: var(--main-bg-color);
+}
+
+.navbar {
+    display: inline-block;
+    background-color: var(--main-bg-color);
+}
+
+.section-title {
+    font-family: Fira Sans, Noto Sans, Roboto Slab, Noto Serif, Fira Sans, Arial;
+    font-weight: normal;
+    font-size  : 24px;
+    font-weight: semi-bold;
+    font-variant: small-caps;
+}
+
+.section-subtitle {
+    font-family: Fira Sans, Noto Sans, Roboto Slab, Noto Serif, Fira Sans, Arial;
+    font-weight: normal;
+    font-size  : 22px;
+    font-weight: medium;
+    font-variant: small-caps;
+}
+
+.page-title {
+    font-family: Fira Sans, Noto Sans, Roboto Slab, Noto Serif, Fira Sans, Arial;
+    font-weight: normal;
+    font-size  : 35px;
+    font-weight: semi-bold;
+    font-variant: small-caps;
+}
+
+html {
+    color: #1c1c1c;
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Fira Sans, Noto Sans, Roboto Slab, Noto Serif, Fira Sans, Arial;
+    font-weight: normal;
+    font-size  : 22px;
+    background-color: var(--main-bg-color);
+}
+
+
+nav {
+    width: 100%;    
+    display: inline-block; 
+    float: center;
+}
+
+nav ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0; }
+
+nav li {
+    display: inline-block;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    font-family: Fira Sans, Ubuntu, Merriweather Sans, Noto Sans, Lucida Console, Monaco, monospace;
+    font-size: 28px;
+    font-weight: medium;
+    font-variant: small-caps;
+    float: left;
+    margin-left:0px;
+    margin-right:20px; 
+    transition: color 0.3s ease;
+}
+
+.navbar-start .navbar-item {
+    text-decoration: none;
+    font-family: Fira Sans, Ubuntu, Merriweather Sans, Noto Sans, Lucida Console, Monaco, monospace;
+    font-size: 28px;
+    font-weight: medium;
+    font-variant: small-caps;
+    float: left;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    margin-left:0px;
+    margin-right:0px; 
+    transition: color 0.3s ease; }
+
+.navbar-end .navbar-item {
+    text-decoration: none;
+    font-family: Fira Sans, Ubuntu, Merriweather Sans, Noto Sans, Lucida Console, Monaco, monospace;
+    font-size: 28px;
+    font-weight: medium;
+    font-variant: small-caps;
+    float: center;
+/*    padding-right:0px;
+    padding-left:20px;
+    padding-top: 10px;
+    padding-bottom:5px;
+*/
+    margin-left:0px;
+    margin-right:0px; 
+    transition: color 0.3s ease;
+}
+
+/*
+.navbar-item:hover{
+    color: #1765a6;
+}
+*/
+
+.course-tabs > ul > li {
+    float: center;
+    padding-top: 5px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom:50px;
+    margin-left:0px;
+    margin-right:0px;
+    transition: color 0.5s ease;    
+}
+
+.course-tabs > ul > li.inactive > a{
+    text-decoration: none;
+    font-family: Fira Sans, Ubuntu, Noto Sans, Lucida Console, Monaco, monospace;
+    font-size: 26px;
+    font-weight: medium;
+    font-variant: all-small-caps;
+}
+
+.course-tabs > ul > li.active > a{
+    text-decoration: none;
+    font-family: Fira Sans, Ubuntu, Noto Sans, Lucida Console, Monaco, monospace;
+    font-size: 26px;
+    font-weight: medium;
+    font-variant: all-small-caps;
+    background-color: #acdcca; 
+/*    background-color: #00b7bb; */
+}
+
+
+.avatar img {
+    width: 100%;
+    float: left;
+    max-width: 350px;
+    max-height: 370px;
+    padding-left: 0;
+    padding-bottom: 0px;
+    border-radius: 10px; }
+
+.section {
+    padding-bottom: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Fira Sans Light, Arial, Noto Sans, Ubuntu;
+    font-weight: normal;
+    font-variant: all-small-caps;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-weight: normal;
+/*    color : #1c1c1c; */
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 26px;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-weight: normal;
+/*    color : #1c1c1c; */
+}
+
+
+h4 a {
+    font-size: 30px;
+}
+
+h5 a {
+    font-size: 26px;
+}
+
+
+a {
+    color : #1765a6;
+}
+
+
+.stacked {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#icon {
+    vertical-align: middle;
+}
+
+.box.calendar-entry {
+    padding-top: 20px;
+}

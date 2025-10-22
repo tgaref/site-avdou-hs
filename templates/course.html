@@ -1,0 +1,41 @@
+  <div class="block">
+    <span class="page-title">
+      {{{ title }}}
+    </span>
+    <hr>
+  </div>
+    <div class="tabs is-toggle is-fullwidth course-tabs">
+  <ul>
+    <li class={{#isinfo}} "active" {{/isinfo}} {{^isinfo}} "inactive" {{/isinfo}}>
+      <a href="../info/">
+        <span>Πληροφοριες</span>	
+      </a>
+    </li>
+    <li class={{#isannouncements}} "active" {{/isannouncements}} {{^isannouncements}} "inactive" {{/isannouncements}}>
+      <a href="../announcements/">
+        <span>Ανακοινωσεις</span>
+      </a>
+    </li>
+    <li class={{#iscalendar}} "active" {{/iscalendar}} {{^iscalendar}} "inactive" {{/iscalendar}}>
+      <a href="../calendar/">
+        <span>Ημερολογιο</span>
+      </a>
+    </li>
+    <li class={{#isassignments}} "active" {{/isassignments}} {{^isassignments}} "inactive" {{/isassignments}}>
+      <a href="../assignments/">
+        <span>Εργασιες</span>
+      </a>
+    </li>
+    <li class={{#ismaterial}} "active" {{/ismaterial}} {{^ismaterial}} "inactive" {{/ismaterial}}>
+      <a href="../material/">
+        <span>Διδακτικο Υλικο</span>
+      </a>
+    </li>
+  </ul>
+  </div>  
+
+    <div class="block">
+      <div class="content">
+	{{{ content }}}
+      </div>
+    </div>
