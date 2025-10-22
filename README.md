@@ -1,10 +1,6 @@
-# site
+# Site configuration using avdou-hs
+This is my site, build with avdou-hs. You can see it live [here](https://www.math.uoc.gr/~tgaref)
 
-## Execute
-
-* Run `stack exec -- site-exe` to see "We're inside the application!"
-* With `stack exec -- site-exe --verbose` you will see the same message, with more logging.
-
-## Run tests
-
-`stack test`
+- To build the site config run `stack build`
+- To build the content run `stack exec -- site build`
+- To preview the site locally run `stack exec -- site watch`
