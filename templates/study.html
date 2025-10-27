@@ -1,0 +1,36 @@
+  <div class="block">
+    <h1 class="page-title">
+      {{{ title }}}
+    </h1>
+    <hr>
+  </div>
+    <div class="tabs is-toggle is-fullwidth course-tabs">
+  <ul>
+    <li class={{#ismaterial}} "active" {{/ismaterial}} {{^ismaterial}} "inactive" {{/ismaterial}}>
+      <a href="../material/">
+        <span>Υλικο</span>
+      </a>
+    </li>
+    <li class={{#isnotes}} "active" {{/isnotes}} {{^isnotes}} "inactive" {{/isnotes}}>
+      <a href="../notes/">
+        <span>Σημειωσεις</span>
+      </a>
+    </li>
+    <li class={{#isassignments}} "active" {{/isassignments}} {{^isassignments}} "inactive" {{/isassignments}}>
+      <a href="../assignments/">
+        <span>Εργασιες</span>
+      </a>
+    </li>
+    <li class={{#isbiblio}} "active" {{/isbiblio}} {{^isbiblio}} "inactive" {{/isbiblio}}>
+      <a href="../biblio/">
+        <span>Βιβλιογραφία</span>
+      </a>
+    </li>
+  </ul>
+  </div>  
+
+    <div class="block">
+      <div class="content">
+	{{{ content }}}
+      </div>
+    </div>

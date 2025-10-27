@@ -61,6 +61,18 @@ site = do
     applyTemplate "base.html" ctx
     routeTo (setExtension "html")
 
+  match "content/activities/cryptostudygroup/*.md" $ do
+    applyCompiler (shortcodeCompiler sectioncode)
+    applyCompiler markdownCompiler
+    applyTemplate "study.html" ctx
+    applyTemplate "base.html" ctx
+    routeTo niceRoute
+
+  match "content/activities/cryptostudygroup/*.html" $ do
+    getMetadata False
+    applyTemplate "slides-base.html" ctx
+    routeTo idRoute
+
 
 {-
 setup :: RIO App Site
@@ -156,6 +168,10 @@ shortcodes = Map.fromList
         , ("pubitem", pubitemExpander)
         ]
 
+sectioncode :: ShortcodeConfig
+sectioncode = Map.fromList
+              [ ("sectionitem", sectionitemExpander)
+              ]
 
 calitemExpander :: [Text] -> Text
 calitemExpander args =
@@ -198,3 +214,21 @@ pubitemExpander args =
       , "</div>"
       ]
     _ -> error $ "\\pubitem requires 3 or 4 arguments, got " <> show (length args)
+
+sectionitemExpander :: [Text] -> Text
+sectionitemExpander args =
+  case args of 
+    [level, title, content] -> T.concat
+      [ "<div class=\"box calendar-entry\">"
+      , "<p>"
+      ,  "\n<div x-data=\"{ open: false }\">\n"
+      , "<a x-on:click=\"open = ! open\">"
+      , "<h", level,"> "
+      , title
+      , "</h", level,">"
+      , "\n</a>\n"
+      , "<div x-show=\"open\">"
+      , content
+      , "</div>\n</div>\n</p>\n</div>"
+      ]
+    _ -> error $ "\\calitem requires 2 arguments, got " <> show (length args)

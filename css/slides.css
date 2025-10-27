@@ -1,0 +1,45 @@
+body {
+    background-color: #111;
+}
+h1, h2, h3, h4, h5, h6 p {
+      color: #fff;
+}
+body, .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.reveal h1, .reveal  h2, .reveal  h3, .reveal  h4, .reveal  h5 {
+    font-size: 28px;
+    font-style: normal;
+}
+.reveal p, .reveal li {
+    font-size: 20pt;
+}
+
+section {
+    justify-content: center; /* center content vertically */
+    align-items: center;      /* center horizontally */
+    text-align: center;
+}
+
+table {
+  font-size: 18pt;
+  width: 100%;              /* let table scale within the slide */
+  border-collapse: collapse; /* cleaner borders */
+  table-layout: auto;       /* ensures cells share width evenly and wrap */
+}
+
+.reveal table, .reveal table th, .reveal table td {
+  border: none !important;
+  background: transparent !important;
+}
+
+th, td {
+  border: 1px solid #888;    /* optional, for clarity */
+  padding: 0.4em 0.6em;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;     /* older name, still supported */
+  overflow-wrap: break-word; /* modern name */
+  white-space: normal;       /* allows wrapping */
+}

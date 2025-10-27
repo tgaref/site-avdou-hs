@@ -3,18 +3,27 @@ title: "Research"
 ---
 My research interests include theoretical and algorithmic aspects of finite fields, cryptography, coding theory and combinatorics. 
 
-### Journal Publications
-
+#### Preprints
 
 :::fixed-grid
 
-\pubitem{**Further results on the Morgan-Mullen conjecture**}{T. Garefalakis, G. Kapetanakis}{*Designs Codes and Cryptography*, **87**, 2639 - 2654, 2019.}{[[pdf]](../static/publications/cn-bound-rev2.pdf)}
+\pubitem{**Translates of completely normal elements and the Morgan-Mullen conjecture**}{T. Garefalakis, G. Kapetanakis}{[[arXiv]](https://arxiv.org/abs/2509.23245){ target="_blank" }}
 
-\pubitem{**On the existence of primitive completely normal bases of finite fields**}{T. Garefalakis, G. Kapetanakis}{*Journal of Pure and Applied Algebra*, **223**(3), 909 - 921, 2019.}{[[pdf]](../static/publications/pcnu-01.pdf)}
+\pubitem{**List decoding of evaluation codes**}{S. Brazitikos, T. Garefalakis, E. Tzanaki}{[[arXiv]](https://arxiv.org/abs/2510.01811){ target="_blank" }}
+
+:::
+
+#### Journal Publications
+
+:::fixed-grid
+
+\pubitem{**Further results on the Morgan-Mullen conjecture**}{T. Garefalakis, G. Kapetanakis}{*Designs Codes and Cryptography*, **87**, 2639 - 2654, 2019.}{[[pdf]](../static/publications/cn-bound-rev2.pdf) [[arXiv]](https://arxiv.org/abs/1811.00896){ target="_blank"}}
+
+\pubitem{**On the existence of primitive completely normal bases of finite fields**}{T. Garefalakis, G. Kapetanakis}{*Journal of Pure and Applied Algebra*, **223**(3), 909 - 921, 2019.}{[[pdf]](../static/publications/pcnu-01.pdf) [[arXiv]](https://arxiv.org/abs/1709.03141){ target="_blank"}}
 
 \pubitem{**Enumerating permutation polynomials**}{T. Garefalakis, G. Kapetanakis}{*Finite Fields and Applications*, **47**, 85 - 93, 2017.}{[[pdf]](../static/publications/enumeration-v2_7.pdf)}
 
-\pubitem{**On the multiplicative order of the roots of** $bX^{q+1} − aX^q + dX − c$}{F.E. Brochero Martinez, T. Garefalakis, L. Reis, E. Tzanaki}{*Finite Fields and Applications*, **47**, 33 - 45, 2017.}{[[pdf]](../static/publications/highorder-r1.pdf)}
+\pubitem{**On the multiplicative order of the roots of** $bX^{q+1} − aX^q + dX − c$}{F.E. Brochero Martinez, T. Garefalakis, L. Reis, E. Tzanaki}{*Finite Fields and Applications*, **47**, 33 - 45, 2017.}{[[pdf]](../static/publications/highorder-r1.pdf) [[arXiv]](https://arxiv.org/abs/1611.10220)}
 
 \pubitem{**A note on the Hansen-Mullen conjecture for self-reciprocal irreducible polynomials**}{T. Garefalakis, G. Kapetanakis}{*Finite Fields and Applications*, **35**, 61 - 63, 2015.}{[[pdf]](../static/publications/notehansenmullen.pdf)}
 
@@ -54,7 +63,7 @@ My research interests include theoretical and algorithmic aspects of finite fiel
 
 :::
  
-### Conference Publications
+#### Conference Publications
  
 :::fixed-grid
 

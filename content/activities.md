@@ -1,7 +1,5 @@
 ---
-
 title: "Activities"
-
 ---
 
 #### Seminars
@@ -13,10 +11,9 @@ title: "Activities"
 - [10th Greek Algebra and Number Theory Conference](https://sites.google.com/view/gantconference2025/){ target="blank" }
 
 #### Summer Schools / Θερινά Σχολεία
-- [4o Θερινό Σχολείο Μαθηματικών "Μαθηματικές ΑποΔράσεις"](summerschool25/){ target="_blank" }
-- [3o Θερινό Σχολείο Μαθηματικών "Μαθηματικές ΑποΔράσεις"](summerschool24/){ target="_blank" }
+- [4o Θερινό Σχολείο Μαθηματικών "Μαθηματικές ΑποΔράσεις"](summerschool25/)
+- [3o Θερινό Σχολείο Μαθηματικών "Μαθηματικές ΑποΔράσεις"](summerschool24/)
 
 #### Other activities
-- [Cryptography and Coding Study Group](https://polyhedron.math.uoc.gr/2223/moodle/course/view.php?id=41){ target="_blank" }
-
+- [Cryptography Study Group](cryptostudygroup/material/)
 

@@ -1,0 +1,60 @@
+
+      <section data-markdown>
+	<textarea data-template>
+ #### Κρυπτοσυστημα
+ - Σύνολο κλειδιών $\mathcal{K}$
+ - Σύνολο μηνυμάτων $\mathcal{M}$
+ - Σύνολο κρυπτογραφημάτων $\mathcal{C}$
+ - Κρυπτοσύστημα $\mathcal{E} = (E,D)$ με
+   - $E: \mathcal{K} \times \mathcal{M} \rightarrow \mathcal{C}$
+   - $D: \mathcal{K} \times \mathcal{C} \rightarrow \mathcal{M}$
+   - Αν $c = E(k, m)$ τότε $m = D(k, c)$
+	</textarea>
+      </section>	  
+	  
+      <section data-markdown>
+	<textarea data-template>
+ #### Τελεια Ασφαλεια
+ $\forall c\in \mathcal{C}\ \ \forall m_0, m_1 \in \mathcal{M}\ \ $ ισχύει
+  $$ \Pr[E(K, m_0) = c] = \Pr[E(K, m_1) = c]$$
+ όπου η τυχαία μεταβλητή $\ \ K\ \ $ είναι ομοιόμορφα κατανεμημένη στο $\ \ \mathcal{K}$.
+	</textarea>
+      </section>
+      
+      <section data-markdown>
+	<textarea data-template>
+ #### Ισοδυναμοι χαρακτητισμοι
+ 1. $\forall c\in \mathcal{C}\ \ \exists N_c\in\mathbb{N} \ $ τέτοιος ώστε $\ \forall m\in\mathcal{M}\ $ ισχύει
+ $$
+ | \{k\in \mathcal{K} : E(k, m) = c\} | = N_c
+ $$
+ 1. Αν η τυχαία μεταβλητή $ \ \ K\ \ $ είναι ομοιόμορφα κατανεμημένη στο $ \ \ \mathcal{K}\ \ $, τότε οι τυχαίες μεταβλητές $\ \\{ E(K, m): m\in\mathcal{M}\\} \ $
+ έχουν την ίδια κατανομή.
+ 
+ 1. Για κάθε συνάρτηση $ \ \ \phi: \mathcal{C}\rightarrow \{0,1\}\ \ $ και κάθε $ \ \ m_0, m_1\in \mathcal{M}\ \ $, ισχύει
+ $$
+ \Pr[\phi(E(K,m_0)) = 1] = \Pr[\phi(E(K,m_1)) = 1]
+ $$
+	 
+ όταν το κλειδί $K$ λαμβάνεται τυχαία και ομοιόμορφα από το $\ \ \mathcal{K}$.
+	</textarea>
+      </section>
+	  
+      <section data-markdown>
+	<textarea data-template>
+ #### Τα καλα νεα
+ - Υπάρχει κρυπτοσύστημα με τέλεια ασφάλεια;	  
+ - Το one-time-pad έχει τέλεια ασφαλεια!
+
+	</textarea>
+      </section>
+
+      <section data-markdown>
+	<textarea data-template>
+ #### Τα κακα νεα
+ - Αν το $\mathcal{E}$ έχει τέλεια ασφάλεια, τότε $|\mathcal{K}| \geq |\mathcal{M}|$.
+ - Για παράδειγμα, αν $\mathcal{K} = \\{0,1\\}^{L}$ και $\mathcal{M} = \\{0,1\\}^{\ell}$, πρέπει $L\geq \ell$.
+ - Ποιός χρησιμοποιεί το one-time-pad;
+ - Ίσως το two-time-pad είναι αρκετά καλό; (Project Venona)
+	</textarea>
+      </section>
