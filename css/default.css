@@ -1,20 +1,69 @@
-:root{
-    --main-bg-color: #ffffff;
-    --box-bg-color: #ffffff;
+:root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f5f5f5;
+      --box-bg-color: #ffffff;
+      --text-primary: #1c1c1c;
+      --text-secondary: #666666;
+      --tab-title-bg: #acdcca;
+      --accent: #0066cc;
+      --border: #dddddd;
+      --shadow: rgba(0, 0, 0, 0.1);
+      color-scheme: light;
+    }
+
+    /* Dark mode colors */
+    [data-theme="dark"] {
+      --bg-primary: #1a1a1a;
+      --bg-secondary: #121212;
+      --box-bg-color: #2a2a2a;
+      --text-primary: #e0e0e0;
+      --text-secondary: #a0a0a0;
+      --accent: #5ca3ff;
+      --border: #444444;
+      --shadow: rgba(0, 0, 0, 0.3);
+      color-scheme: dark;
+    }
+
+/* Theme toggle button */
+#theme-toggle {
+    background-color: var(--bg-primary); 
+    color: var(--text-primary);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: opacity 0.2s, transform 0.1s;
+    font-weight: 500;
 }
 
+#theme-toggle:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
 
+#theme-toggle:active {
+    transform: translateY(0);
+}    
+    
 .box{
+    color: var(--text-primary);
     background-color: var(--box-bg-color);
+    box-shadow: 0 2px 8px var(--shadow);
 }
 
 .footer{
-    background-color: var(--main-bg-color);
+    color: var(--text-secondary);
+    background-color: var(--bg-primary);
 }
 
 .navbar {
     display: inline-block;
-    background-color: var(--main-bg-color);
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
     position: fixed;
     max-width: 1160px;
     margin: 0 auto;   
@@ -46,7 +95,8 @@
 }
 
 html {
-    color: #1c1c1c;
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
     width: 100%;
     max-width: 1160px;
     margin: 0 auto;
@@ -56,7 +106,7 @@ body {
     font-family: Fira Sans, Noto Sans, Ubuntu, Roboto Slab, Noto Serif, Arial;
     font-weight: normal;
     font-size  : 22px;
-    background-color: var(--main-bg-color);
+    background-color: var(--bg-primary) !important;
 }
 
 .bigblock {
@@ -155,7 +205,7 @@ nav li {
     font-size: 26px;
     font-weight: medium;
     font-variant: all-small-caps;
-    background-color: #acdcca; 
+    background-color: var(--tab-title-bg);
 /*    background-color: #00b7bb; */
 }
 
@@ -209,7 +259,7 @@ h5 a {
 
 
 a {
-    color : #1765a6;
+    color : var(--accent);
 }
 
 
