@@ -16,8 +16,10 @@
       --bg-primary: #1a1a1a;
       --bg-secondary: #121212;
       --box-bg-color: #2a2a2a;
-      --text-primary: #e0e0e0;
+/*      --text-primary: #e0e0e0; */
+      --text-primary: #fafaf7;
       --text-secondary: #a0a0a0;
+      --tab-title-bg: #005752;
       --accent: #5ca3ff;
       --border: #444444;
       --shadow: rgba(0, 0, 0, 0.3);
@@ -107,6 +109,7 @@ body {
     font-weight: normal;
     font-size  : 22px;
     background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
 }
 
 .bigblock {
@@ -123,7 +126,8 @@ nav {
 nav ul {
     padding-left: 0;
     margin-top: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+}
 
 nav li {
     display: inline-block;
@@ -137,8 +141,12 @@ nav li {
     font-variant: small-caps;
     float: left;
     margin-left:0px;
-    margin-right:20px; 
+    margin-right:20px;
     transition: color 0.3s ease;
+}
+
+.navbar-brand .navbar-item {
+    color: var(--text-primary);
 }
 
 .navbar-start .navbar-item {
@@ -155,7 +163,9 @@ nav li {
 
     margin-left:0px;
     margin-right:0px; 
-    transition: color 0.3s ease; }
+    transition: color 0.3s ease;
+    color: var(--text-primary);
+}
 
 .navbar-end .navbar-item {
     text-decoration: none;
@@ -172,6 +182,7 @@ nav li {
     margin-left:0px;
     margin-right:0px; 
     transition: color 0.3s ease;
+    color: var(--text-primary);
 }
 
 /*
@@ -188,7 +199,8 @@ nav li {
     padding-bottom:50px;
     margin-left:0px;
     margin-right:0px;
-    transition: color 0.5s ease;    
+    transition: color 0.5s ease;
+    color: var(--text-primary);
 }
 
 .course-tabs > ul > li.inactive > a{
@@ -197,6 +209,7 @@ nav li {
     font-size: 26px;
     font-weight: medium;
     font-variant: all-small-caps;
+    color: var(--text-primary);
 }
 
 .course-tabs > ul > li.active > a{
@@ -206,9 +219,8 @@ nav li {
     font-weight: medium;
     font-variant: all-small-caps;
     background-color: var(--tab-title-bg);
-/*    background-color: #00b7bb; */
+    color: var(--text-primary);
 }
-
 
 .avatar img {
     width: 100%;
