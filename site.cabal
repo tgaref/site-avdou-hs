@@ -1,6 +1,6 @@
 cabal-version: 2.2
 
--- This file has been generated from package.yaml by hpack version 0.37.0.
+-- This file has been generated from package.yaml by hpack version 0.38.1.
 --
 -- see: https://github.com/sol/hpack
 
@@ -39,6 +39,7 @@ library
       aeson
     , avdou-hs
     , base >=4.11 && <10
+    , directory
     , optparse-applicative
     , rio >=0.1.12.0
     , time
@@ -57,6 +58,7 @@ executable site
       aeson
     , avdou-hs
     , base >=4.11 && <10
+    , directory
     , optparse-applicative
     , rio >=0.1.12.0
     , site

@@ -26,6 +26,7 @@ dependencies:
 - avdou-hs
 - aeson
 - time
+- directory
 
 ghc-options:
   - -O2

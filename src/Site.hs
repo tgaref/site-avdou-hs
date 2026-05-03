@@ -12,13 +12,13 @@ import qualified RIO.Time as Time
 import           RIO.HashMap (foldlWithKey')
 import           Data.Time.Format (defaultTimeLocale, formatTime)
 import qualified Data.Aeson as Aeson
-import           Types (App(..), Options(optionsPrefix))
+import           Types
 import           Avdou
 
-site :: SiteM (RIO App) ()
+site :: SiteM SiteEnv ()
 site = do
-  let siteDir = "/home/tgaref/www/site-avdou-hs/"
-      publicDir = "/home/tgaref/www/site-avdou-hs/public/"
+  let siteDir = "/home/tgaref/www/mysite/"
+      publicDir = "/home/tgaref/www/mysite/public/"
 
   setSiteDir siteDir
   setPublicDir publicDir
@@ -27,7 +27,7 @@ site = do
 
   setTemplates ts 
 
-  ctx <- lift context
+  ctx <- SiteM context
 
   copy "css/*" idRoute
   copy "content/static/**/*" idRoute
@@ -80,7 +80,7 @@ setup  = do
   let siteDir = "/home/tgaref/www/site-avdou-hs/"
       publicDir = "/home/tgaref/www/site-avdou-hs/public/"   
   ts <- liftIO $ loadTemplates "templates"
-  ctx <- context
+  ctx <- SiteM context
 
 
   let m = Mine (Simple "content/*.md") [getTitle] True
@@ -146,9 +146,9 @@ getTitle doc =
 --- Context 
 ---------------------------------------------------------
 
-context :: RIO App Context
+context :: (HasApp env) => RIO env Context
 context = do
-  app <- ask
+  app <- view appL
   let prefix = optionsPrefix . appOptions $ app 
 
   nowUTC <- Time.getCurrentTime

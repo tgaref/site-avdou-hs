@@ -4,9 +4,9 @@
 module Main (main) where
 
 import           RIO
-import           RIO.State (execStateT)
 import qualified RIO.Text as T
 import           RIO.Process
+import           System.Directory (setCurrentDirectory)
 import           Options.Applicative
 import           Avdou
 import           Site
@@ -63,9 +63,12 @@ main = do
           , appProcessContext = pc
           , appOptions = options
           }
-    mysite <- runRIO app $ execStateT (unSiteM site) (Site "" "" mempty [] [])
+    ref <- newIORef (Site "" "" mempty [] [])
+    let siteEnv = SiteEnv ref app
+    setCurrentDirectory "/home/tgaref/www/mysite/"
+    runRIO siteEnv (unSiteM site)
+    mysite <- readIORef ref
     case optionsCmd options of
       Build -> build mysite
       Watch -> watch mysite (optionsPort options)
       Clean -> clean mysite 
-
